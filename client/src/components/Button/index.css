@@ -10,6 +10,11 @@
     cursor: pointer;
 }
 
+.btn--home {
+    height: 5px;
+    width: 5px;
+}
+
 .btn--primary {
     background-color: var(--primary);
     color: #242424;

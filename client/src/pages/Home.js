@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import '../index.css'
+// import { Button } from "../components/Button";
+// import { Hero } from "../components/Hero";
 
-// import ProductList from "../components/ProductList";
-// import CategoryMenu from "../components/CategoryMenu";
-// import Cart from "../components/Cart";
 
 const Home = () => {
   return (
     <div className="container">
-      <h1>Welcome to our Hair Styling Store</h1>
-      <Link to="/dashboard">Enter Store</Link>
-      
+     
+      <Link to="/dashboard">
+    <button className="btn--home">
+          HAIR STORE
+    </button>
+    </Link>
     </div>
   );
 };
