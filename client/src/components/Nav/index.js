@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 
+
 function Nav() {
 
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click)
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -43,10 +47,13 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop
+          <span role="img" aria-label="Beauty Solon"></span>
+         Rare Hair Beauty Salon
         </Link>
       </h1>
+      <div className='menu-icon' onClick={handleClick}>
+            
+            </div>
 
       <nav>
         {showNavigation()}
