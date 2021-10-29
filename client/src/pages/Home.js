@@ -10,7 +10,6 @@ const Home = () => {
     <div className="container">
       <h1>Welcome to our Hair Styling Store</h1>
       <Link to="/dashboard">Enter Store</Link>
-      
     </div>
   );
 };
