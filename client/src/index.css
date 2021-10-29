@@ -1,7 +1,7 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: #1645c7;
+  --secondary: #f52525;
+  --tertiary: #458859;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
@@ -21,7 +21,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Lobster', cursive;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -91,12 +91,12 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
   background-color: var(--secondary);
+  color: #fff;
 }
 
 button:hover {
