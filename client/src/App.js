@@ -55,7 +55,7 @@ function App() {
               <Route exact path="/success" component={Success} />
               <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
-              <Route exact path="/booking" component={Appointment} />
+              <Route exact path="/appointment" component={Appointment} />
               <Route component={NoMatch} />
             </Switch>
           </StoreProvider>

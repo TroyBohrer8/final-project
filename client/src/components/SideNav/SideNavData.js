@@ -13,7 +13,7 @@ export const SideNavData = [
   {
     title: "Men",
     path: "#",
-    icon: <FaIcons.FaAndroid />,
+    icon: <FaIcons.FaAndroid/>,
     className: "nav-text",
   },
   {
@@ -24,7 +24,7 @@ export const SideNavData = [
   },
   {
       title: "Book Appointment",
-      path: "/booking",
+      path: "/appointment",
       icon: <IoIcons.IoIosBookmark />,
       className: "nav-text",
   }
