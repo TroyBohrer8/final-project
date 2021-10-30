@@ -19,8 +19,7 @@ body {
 }
 
 body {
-  background: url("https://i.pinimg.com/564x/bd/0f/86/bd0f861089597cdd38f0887d7bd9aafc.jpg");
-  background-size: cover;
+ 
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
@@ -28,7 +27,12 @@ body {
   line-height: 1.5;
   font-size: 16px;
   color: var(--dark);
+ ;
+  background-size: cover;
+  background: url("https://i.pinimg.com/564x/bd/0f/86/bd0f861089597cdd38f0887d7bd9aafc.jpg");
+  background-size: cover;
 }
+
 
 h1,
 h2,
@@ -83,11 +87,13 @@ a:hover {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  width: auto;
-  background: url("https://wallpaperaccess.com/full/1109087.jpg");
-  height: 75px;
+
+display: flex;
+align-items: center;
+width: auto;
+background: url("https://wallpaperaccess.com/full/1109087.jpg");
+height:75px;
+
 }
 
 header a {
@@ -270,3 +276,4 @@ li {
   text-align: center;
   color: #458859;
 }
+

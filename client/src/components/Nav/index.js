@@ -31,7 +31,9 @@ function Nav() {
           <li className="mx-1">
             <Link to="/login">Login</Link>
           </li>
+          
         </ul>
+         
       );
     }
   }
