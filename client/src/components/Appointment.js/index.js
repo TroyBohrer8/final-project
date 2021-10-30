@@ -59,8 +59,11 @@ function Appointment() {
           />
         </div>
         <Calendar onChange={onChange} value={value} />
-        <div className="flex-row flex-end">
-            <button type="submit">Submit</button>
+        <div>
+          <br></br>
+        
+         
+            <button class="calendar-button" type="submit">Book Now!</button>
         </div>
       </form>
     </div>
