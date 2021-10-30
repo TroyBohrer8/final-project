@@ -1,9 +1,19 @@
-import React, { Component } from 'react';
+import React from "react";
+// import { Link } from 'react-router-dom';
+import '../index.css'
 
-class BookingsPage extends Component {
-  render() {
-    return <h1>The Bookings Page</h1>;
-  }
-}
+const Bookings = () => {
 
-export default BookingsPage;
+  return (
+    <div className="container">
+      Set up a appointment
+    </div>
+
+  );
+
+};
+  
+  
+
+
+export default Bookings;

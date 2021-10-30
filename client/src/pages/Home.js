@@ -15,7 +15,7 @@ const Home = () => {
     </button>
     </Link>
 
-    <Link to="/Event">
+    <Link to="/appointment">
     <button className="btn--home1">
         Appointment
     </button>
