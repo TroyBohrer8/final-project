@@ -51,3 +51,14 @@ Click [here](website link) to access Rare Hair’s homepage. It should resemble 
 3. Click “Back to log in.”
 
 4. To log in, enter your username (email address) and password, and click “Submit.”
+
+
+
+## Contributors:
+
+* [Troy Bohrer](https://github.com/TroyBohrer8)
+
+* [Jamaal Lawson](https://github.com/Maalie04)
+
+* [Cory Piette](https://github.com/coryjpiette)
+
