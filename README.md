@@ -1,4 +1,6 @@
- ![image](https://user-images.githubusercontent.com/60293516/139558487-f02fc116-b2ee-49eb-8cac-f2a1cf595512.png)    # Rare Hair Beauty Salon  
+ ![image](https://user-images.githubusercontent.com/60293516/139558487-f02fc116-b2ee-49eb-8cac-f2a1cf595512.png)   
+ 
+# Rare Hair Beauty Salon  
 
 ## Description
 
