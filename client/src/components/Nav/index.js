@@ -1,21 +1,18 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-
+import SideNav from "../SideNav";
 
 function Nav() {
-
   const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click)
+  const handleClick = () => setClick(!click);
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
         <ul className="flex-row">
           <li className="mx-1">
-            <Link to="/orderHistory">
-              Order History
-            </Link>
+            <Link to="/orderHistory">Order History</Link>
           </li>
           <li className="mx-1">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
@@ -29,14 +26,10 @@ function Nav() {
       return (
         <ul className="flex-row">
           <li className="mx-1">
-            <Link to="/signup">
-              Signup
-            </Link>
+            <Link to="/signup">Signup</Link>
           </li>
           <li className="mx-1">
-            <Link to="/login">
-              Login
-            </Link>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       );
@@ -45,19 +38,16 @@ function Nav() {
 
   return (
     <header className="flex-row px-1">
+      <SideNav />
       <h1>
         <Link to="/">
           <span role="img" aria-label="Beauty Solon"></span>
-         Rare Hair Beauty Salon
+          Rare Hair Beauty Salon
         </Link>
       </h1>
-      <div className='menu-icon' onClick={handleClick}>
-            
-            </div>
+      <div className="menu-icon" onClick={handleClick}></div>
 
-      <nav>
-        {showNavigation()}
-      </nav>
+      <nav>{showNavigation()}</nav>
     </header>
   );
 }

@@ -15,18 +15,14 @@ const Home = () => {
     </button>
     </Link>
 
-    <Link to="/dashboard">
+    <Link to="/Event">
     <button className="btn--home1">
-         Women
+        Appointment
     </button>
     </Link>
 
 
-    <Link to="/dashboard">
-    <button className="btn--home2">
-         Men
-    </button>
-    </Link>
+    
 
 
 
