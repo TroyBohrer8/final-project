@@ -11,7 +11,6 @@ import { setContext } from '@apollo/client/link/context';
 import Logo from './components/Logo';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
