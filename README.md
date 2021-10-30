@@ -38,7 +38,7 @@ Welcome to Rare Hair Beauty Salon, your one-stop shop for all things hair, inclu
 - MongoDB, Mongoose
 - Queries, Mutations
 
-## Login
+## Login:
 
 Click [here](website link) to access Rare Hair’s homepage. It should resemble the following:
 
@@ -53,7 +53,7 @@ Click [here](website link) to access Rare Hair’s homepage. It should resemble 
 4. To log in, enter your username (email address) and password, and click “Submit.”
 
 
-## Requirements
+## Requirements:
 
 You will need to run a standard `npm install` and  `npm install react-calendar` to access the appointment calendar.
 
