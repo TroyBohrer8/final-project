@@ -16,7 +16,7 @@ Welcome to Rare Hair Beauty Salon, your one-stop shop for all things hair, inclu
 2. [Resources](#resources)
 3. [Image](#image)
 4. [Login](#login)
-5. [Usage](#usage)
+5. [Requirements](#requirements)
 6. [Contributors](#contributors)
 
 ## Features:
@@ -52,6 +52,8 @@ Click [here](website link) to access Rare Hair’s homepage. It should resemble 
 
 4. To log in, enter your username (email address) and password, and click “Submit.”
 
+
+## Requirements
 
 
 ## Contributors:
