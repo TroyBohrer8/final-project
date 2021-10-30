@@ -1,6 +1,6 @@
 .sidenav {
-    background-color: #1645c7;
-    height: 80px;
+    background-color: rgb(108, 109, 112)7;
+    height: px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -13,7 +13,9 @@
 }
 
 .nav-menu {
-    background-color: #1645c7;
+    background-color: rgb(108, 109, 112);
+    background: url("https://wallpaperaccess.com/full/1109087.jpg");
+    background-size: cover;
     width: 250px;
     height: 100vh;
     display: flex;
@@ -52,7 +54,7 @@
 
 .nav-text a:hover {
     background-color: #fff;
-    color: #1645c7;
+    color: rgb(108, 109, 112);
 }
 
 .nav-menu-items {
