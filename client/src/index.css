@@ -19,8 +19,7 @@ body {
 }
 
 body {
-  background: url("https://i.pinimg.com/564x/bd/0f/86/bd0f861089597cdd38f0887d7bd9aafc.jpg");
-  background-size: cover;
+ 
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
@@ -28,9 +27,43 @@ body {
   line-height: 1.5;
   font-size: 16px;
   color: var(--dark);
+ ;
+  background-size: cover;
+  background: url("https://i.pinimg.com/564x/bd/0f/86/bd0f861089597cdd38f0887d7bd9aafc.jpg");
+  background-size: cover;
 }
 
 
+.split {
+  height: 100%;
+  margin-top:75px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+
+  background-size: cover;
+  width: 50%;
+}
+
+.right {
+  right: 0;
+  background: url("https://i.pinimg.com/564x/bd/0f/86/bd0f861089597cdd38f0887d7bd9aafc.jpg");
+  background-size: cover;
+  width: 50%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 
 h1,
@@ -90,9 +123,8 @@ header {
 display: flex;
 align-items: center;
 width: auto;
-
 background: url("https://wallpaperaccess.com/full/1109087.jpg");
-height: 75px;
+height:75px;
 }
 
 header a {
@@ -278,4 +310,9 @@ padding: -10px
 .main-title {
   text-align:center;
   color: #458859;
+}
+
+.top-image {
+size: 50%;
+
 }
