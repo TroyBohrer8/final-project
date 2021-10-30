@@ -55,6 +55,10 @@ Click [here](website link) to access Rare Hair’s homepage. It should resemble 
 
 ## Requirements
 
+ `npm install`
+ 
+ `npm install react calendar`
+
 
 ## Contributors:
 
