@@ -19,6 +19,8 @@ body {
 }
 
 body {
+  background: url("https://i.pinimg.com/564x/bd/0f/86/bd0f861089597cdd38f0887d7bd9aafc.jpg");
+  background-size: cover;
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
@@ -27,6 +29,9 @@ body {
   font-size: 16px;
   color: var(--dark);
 }
+
+
+
 
 h1,
 h2,
@@ -80,8 +85,13 @@ a:hover {
 }
 
 header {
-  background: royalblue;
-  height: 100px;
+
+display: flex;
+align-items: center;
+width: auto;
+
+background: url("https://wallpaperaccess.com/full/1109087.jpg");
+height: 75px;
 }
 
 header a {
@@ -257,4 +267,14 @@ input:focus {
   .card {
     width: 100%;
   }
+}
+
+li {
+font-size: larger;
+padding: -10px
+}
+
+.main-title {
+  text-align:center;
+  color: #458859;
 }
