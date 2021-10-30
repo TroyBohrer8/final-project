@@ -55,9 +55,7 @@ Click [here](website link) to access Rare Hair’s homepage. It should resemble 
 
 ## Requirements
 
- `npm install`
- 
- `npm install react calendar`
+You will need to run a standard `npm install` and  `npm install react-calendar` to access the appointment calendar.
 
 
 ## Contributors:
