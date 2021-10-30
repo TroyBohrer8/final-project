@@ -1,10 +1,59 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Product, Category, Order } = require('../models');
+const { User, Product, Category, Order, Event, Booking } = require('../models');
+const { events } = require('../models/Order');
 const { signToken } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 const resolvers = {
   Query: {
+
+    // events: async eventIds => {
+      
+    //     const events = await Event.find({ _id: { $in: eventIds } });
+    //     events.map(event => {
+    //       return {
+    //         ...event._doc,
+    //         _id: event.id,
+    //         date: new Date(event._doc.date).toISOString(),
+    //         creator: user.bind(this, event.creator)
+    //       };
+    //     });
+    //     return events;
+    // },
+
+    // singleEvent: async eventId => {
+    //   const event = await Event.findById(eventId);
+    //   return {
+    //     ...event._doc,
+    //     _id: event.id,
+    //     creator: user.bind(this, event.creator)
+    //   };
+    // },
+
+    // bookings: async () => {
+    //   const bookings = await Booking.find();
+    //   return bookings.map(booking => {
+    //     return {
+    //       ...booking._doc,
+    //       _id: booking.id,
+    //       user: user.bind(this, booking._doc.user),
+    //       event: singleEvent.bind(this, booking._doc.event),
+    //       createdAt: new Date(booking._doc.createdAt).toISOString(),
+    //       updatedAt: new Date(booking._doc.updatedAt).toISOString()
+    //     };
+    //   });
+    // },
+
+    // createEvent: async args => {
+    //   const event = new Event({
+    //     title: args.eventInput.title,
+    //     description: args.eventInput.description,
+    //     price: +args.eventInput.price,
+    //     date: new Date(args.eventInput.date),
+        
+    //   });
+    // },
+
     categories: async () => {
       return await Category.find();
     },

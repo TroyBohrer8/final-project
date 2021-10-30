@@ -14,7 +14,39 @@ const Home = () => {
           HAIR STORE
     </button>
     </Link>
+
+    <Link to="/dashboard">
+    <button className="btn--home1">
+         Women
+    </button>
+    </Link>
+
+
+    <Link to="/dashboard">
+    <button className="btn--home2">
+         Men
+    </button>
+    </Link>
+
+
+
+
+
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
+
+
   );
 };
 

@@ -25,6 +25,12 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
+  createdEvents: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Event'
+    },
+  ],
   orders: [Order.schema]
 });
 
@@ -45,4 +51,4 @@ userSchema.methods.isCorrectPassword = async function(password) {
 
 const User = mongoose.model('User', userSchema);
 
-module.exports = User;
+module.exports = mongoose.model('User', userSchema);

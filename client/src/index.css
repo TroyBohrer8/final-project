@@ -114,6 +114,38 @@ button {
   background-color: blue;
 }
 
+.btn--home1 {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 20px 1px;
+  margin-left: 25px;
+  background-color: blue;
+}
+
+
+.btn--home2 {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 20px 1px;
+  margin-left: 25px;
+  background-color: blue;
+}
+
+
+
+
 button:hover {
   opacity: .8;
 }
