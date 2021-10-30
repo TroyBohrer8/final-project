@@ -8,7 +8,7 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Logo from './components/Logo';
+
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import Detail from './pages/Detail';

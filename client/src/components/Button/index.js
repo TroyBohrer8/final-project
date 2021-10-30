@@ -1,5 +1,5 @@
 import React from "react";
-import '/.index.css';
+import './index.js';
 import {Link} from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--large'];
@@ -21,12 +21,12 @@ export const Button = ({
 
     return (
         <Link to='/Signup' className='btn-mobile'>
-            <button 
+            <Button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             type={type}
             >
                 {children}
-            </button>
+            </Button>
         </Link>
     );
 };

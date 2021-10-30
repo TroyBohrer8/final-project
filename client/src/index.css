@@ -80,7 +80,8 @@ a:hover {
 }
 
 header {
-  background: var(--primary);
+  background: royalblue;
+  height: 100px;
 }
 
 header a {
@@ -98,6 +99,52 @@ button {
   background-color: var(--secondary);
   color: #fff;
 }
+
+.btn--home {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 20px 1px;
+  margin-left: -95px;
+  background-color: blue;
+}
+
+.btn--home1 {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 20px 1px;
+  margin-left: 25px;
+  background-color: blue;
+}
+
+
+.btn--home2 {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 20px 1px;
+  margin-left: 25px;
+  background-color: blue;
+}
+
+
+
 
 button:hover {
   opacity: .8;
@@ -146,6 +193,9 @@ input:focus {
   flex-wrap: wrap;
 }
 
+.li.mx-1::marker {
+  display:none;
+}
 .space-between {
   justify-content: space-between;
 }
@@ -156,7 +206,7 @@ input:focus {
 
 .mx-1 {
   margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
+  margin-left: 300px;
 }
 
 .mx-2 {
