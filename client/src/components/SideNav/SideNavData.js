@@ -24,7 +24,7 @@ export const SideNavData = [
   },
   {
       title: "Book Appointment",
-      path: "#",
+      path: "/booking",
       icon: <IoIcons.IoIosBookmark />,
       className: "nav-text",
   }
