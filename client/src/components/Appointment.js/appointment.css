@@ -1,5 +1,5 @@
 .react-calendar {
-    width: 350px;
+    width: 500px;
     max-width: 100%;
     background: black;
     border: 1px solid #a0a096;
@@ -54,7 +54,7 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.75em;
-    color:#a9d4ff
+    color:#5e9fe1
   }
   .react-calendar__month-view__weekdays__weekday {
     padding: 0.5em;
@@ -117,3 +117,16 @@
     background-color: rgb(46, 42, 42);
   }
   
+  
+  .calendar-button {
+  
+margin-bottom: 500px;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 1px;
+    background: url("https://wallpaperaccess.com/full/1109087.jpg");
+    color: #fff;
+  }
