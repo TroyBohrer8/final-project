@@ -13,7 +13,7 @@
 //     const [state, dispatch] = useStoreContext();
 //     const { id } = useParams();
 
-//     const { loading, data } = useQuery(QUERY_PRODUCTS);
+//     const { loading, data } = useQuery(QUERY_EVENT);
 
   
 //     startCreateEventHandler = () => {
