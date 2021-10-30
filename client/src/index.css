@@ -22,7 +22,7 @@ body {
  
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -34,45 +34,13 @@ body {
 }
 
 
-.split {
-  height: 100%;
-  margin-top:75px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.left {
-
-  background-size: cover;
-  width: 50%;
-}
-
-.right {
-  right: 0;
-  background: url("https://i.pinimg.com/564x/bd/0f/86/bd0f861089597cdd38f0887d7bd9aafc.jpg");
-  background-size: cover;
-  width: 50%;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -125,6 +93,7 @@ align-items: center;
 width: auto;
 background: url("https://wallpaperaccess.com/full/1109087.jpg");
 height:75px;
+
 }
 
 header a {
@@ -148,13 +117,13 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 20px 1px;
   margin-left: -95px;
-  background-color:rgb(108, 109, 112);
+  background-color: rgb(108, 109, 112);
 }
 
 .btn--home1 {
@@ -162,7 +131,7 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -171,31 +140,27 @@ button {
   background-color: rgb(108, 109, 112);
 }
 
-
 .btn--home2 {
   color: white;
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 20px 1px;
   margin-left: 25px;
-  background-color:rgb(108, 109, 112);
+  background-color: rgb(108, 109, 112);
 }
 
-
-
-
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 img {
@@ -221,7 +186,7 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -237,7 +202,7 @@ input:focus {
 }
 
 .li.mx-1::marker {
-  display:none;
+  display: none;
 }
 .space-between {
   justify-content: space-between;
@@ -303,16 +268,12 @@ input:focus {
 }
 
 li {
-font-size: larger;
-padding: -10px
+  font-size: larger;
+  padding: -10px;
 }
 
 .main-title {
-  text-align:center;
+  text-align: center;
   color: #458859;
 }
 
-.top-image {
-size: 50%;
-
-}
