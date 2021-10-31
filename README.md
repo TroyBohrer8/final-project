@@ -9,7 +9,7 @@ Welcome to Rare Hair Beauty Salon, your one-stop shop for all things hair, inclu
 
 
 ## Presentation
-[PRESENTATION LINK](https://docs.google.com/presentation/d/1prNqVnsD-kEl74ajBZhM52OfPLuJCQMc/edit?usp=sharing&ouid=112008522330891918667&rtpof=true&sd=true)
+Your can view our app presenation [here.](https://docs.google.com/presentation/d/1prNqVnsD-kEl74ajBZhM52OfPLuJCQMc/edit?usp=sharing&ouid=112008522330891918667&rtpof=true&sd=true)
 
 #### Table of Contents
 1. [Feature List](#features)
