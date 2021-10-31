@@ -17,14 +17,14 @@ const Home = () => {
 
     <Link to="/dashboard">
     <button className="btn--home1">
-         Women
+         Women's Products
     </button>
     </Link>
 
 
     <Link to="/dashboard">
     <button className="btn--home2">
-         Men
+         Men's Products
     </button>
     </Link>
 
