@@ -15,34 +15,7 @@ const Home = () => {
     </button>
     </Link>
 
-    <Link to="/appointment">
-    <button className="btn--home1">
-        Appointment
-    </button>
-    </Link>
-
-
-    
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
   );
 };
 

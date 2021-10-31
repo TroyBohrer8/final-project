@@ -12,13 +12,13 @@ export const SideNavData = [
   },
   {
     title: "Men",
-    path: "#",
+    path: "/men",
     icon: <FaIcons.FaAndroid />,
     className: "nav-text",
   },
   {
     title: "Women",
-    path: "#",
+    path: "/women",
     icon: <FaIcons.FaGem />,
     className: "nav-text",
   },
