@@ -35,6 +35,7 @@ Welcome to Rare Hair Beauty Salon, your one-stop shop for all things hair, inclu
 - React
 - Node, Express, Express-session
 - GraphQL
+- Schema
 - MongoDB, Mongoose
 - Queries, Mutations
 
