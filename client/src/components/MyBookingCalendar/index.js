@@ -44,7 +44,7 @@ function MyBookingCalendar(props){
   
     return (
       <div className="container my-1">
-         <BookingCalendar clickable bookings={bookings}  />
+         <BookingCalendar  clickable bookings={bookings}  />
       </div>
     )
 

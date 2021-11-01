@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { User, Product, Category, Order, Event, Booking } = require("../models");
+const { User, Product, Category, Order, Service, MenProduct, WomenProduct, Event, Booking } = require("../models");
 const { events } = require("../models/Order");
 const { signToken } = require("../utils/auth");
 const stripe = require("stripe")("sk_test_4eC39HqLyjWDarjtT1zdp7dc");
@@ -51,9 +51,69 @@ const resolvers = {
     //   });
     // },
 
+    services: async (parent, { category, name}) => {
+      const params = {};
+
+      if (category) {
+        params.category = category;
+      }
+
+      if (name) {
+        params.name = {
+          $regex: name,
+        };
+      }
+
+      return await Service.find(params).populate("category");
+    },
+
+    service: async (parent, { _id }) => {
+      return await Service.findById(_id).populate("category");
+    },
+
     categories: async () => {
       return await Category.find();
     },
+
+    menproducts: async (parent, { category, name }) => {
+      const params = {};
+
+      if (category) {
+        params.category = category;
+      }
+
+      if (name) {
+        params.name = {
+          $regex: name,
+        };
+      }
+
+      return await MenProduct.find(params).populate("category");
+    },
+    menproduct: async (parent, { _id }) => {
+      return await MenProduct.findById(_id).populate("category");
+    },
+
+    womenproducts: async (parent, { category, name }) => {
+      const params = {};
+
+      if (category) {
+        params.category = category;
+      }
+
+      if (name) {
+        params.name = {
+          $regex: name,
+        };
+      }
+
+      return await WomenProduct.find(params).populate("category");
+    },
+    womenproduct: async (parent, { _id }) => {
+      return await WomenProduct.findById(_id).populate("category");
+    },
+
+
     products: async (parent, { category, name }) => {
       const params = {};
 

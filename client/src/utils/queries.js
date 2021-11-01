@@ -16,6 +16,38 @@ export const QUERY_PRODUCTS = gql`
   }
 `;
 
+export const QUERY_MEN_PRODUCTS = gql`
+  query getMenProducts($category: ID) {
+    menproducts(category: $category) {
+      _id
+      name
+      description
+      price
+      quantity
+      image
+      category {
+        _id
+      }
+    }
+  }
+`;
+
+export const QUERY_WOMEN_PRODUCTS = gql`
+  query getWomenProducts($category: ID) {
+    womenproducts(category: $category) {
+      _id
+      name
+      description
+      price
+      quantity
+      image
+      category {
+        _id
+      }
+    }
+  }
+`;
+
 export const QUERY_SERVICES = gql`
 query getService($services: [ID]!){
  services(services: $services){
