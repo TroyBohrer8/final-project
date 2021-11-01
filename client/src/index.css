@@ -1,7 +1,7 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: #1645c7;
+  --secondary: #f52525;
+  --tertiary: #458859;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
@@ -19,14 +19,18 @@ body {
 }
 
 body {
+ 
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
   color: var(--dark);
+  background: url("https://i.pinimg.com/564x/bd/0f/86/bd0f861089597cdd38f0887d7bd9aafc.jpg");
+  background-size: cover;
 }
+
 
 h1,
 h2,
@@ -34,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -46,6 +50,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  font-weight: bold;
 }
 
 h3 {
@@ -80,8 +85,34 @@ a:hover {
 }
 
 header {
-  background: royalblue;
+
+display: flex;
+background: url("https://wallpaperaccess.com/full/1109087.jpg");
+height:50px;
+justify-content: center;
+
+}
+
+li {
+  font-size: larger;
+
+ display: inline-block;
+ margin: 0px 5px 7px 20px !important;
+
+
+
+}
+
+#header-image1{
   height: 100px;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+#header-image2{
+  height: 100px;
+  margin-left: auto;
+  margin-top: auto;
 }
 
 header a {
@@ -92,12 +123,12 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background: url("https://wallpaperaccess.com/full/1109087.jpg");
+  color: #fff;
 }
 
 .btn--home {
@@ -105,54 +136,63 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 20px 1px;
   margin-left: -95px;
-  background-color: blue;
+  background-color: rgb(108, 109, 112);
 }
 
 .btn--home1 {
   color: white;
   font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
+ font-weight: bolder;
+vertical-align: bottom; 
+padding-top: 275px;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 20px 1px;
-  margin-left: 25px;
-  background-color: blue;
+  margin-left: 280px;
+  background-color: rgb(108, 109, 112);
+  background-image: url(./components/Button/Womanpic.png);
+  background-size: cover;
+  height: 300px;
+  width:250px;
+ 
 }
-
 
 .btn--home2 {
   color: white;
   font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
+ font-weight: bolder;
+ vertical-align: bottom; 
+ padding-top: 275px;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 20px 1px;
-  margin-left: 25px;
-  background-color: blue;
+  margin-left: 100px;
+  background-color: rgb(108, 109, 112);
+  background-image: url(./components/Button/manhairsilouette.png);
+  background-size: cover;
+  height: 300px;
+  width:250px;
+
 }
 
 
-
-
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 img {
@@ -178,7 +218,7 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -194,7 +234,7 @@ input:focus {
 }
 
 .li.mx-1::marker {
-  display:none;
+  display: none;
 }
 .space-between {
   justify-content: space-between;
@@ -257,4 +297,12 @@ input:focus {
   .card {
     width: 100%;
   }
+}
+
+
+
+
+.main-title {
+  text-align: center;
+  color: #458859;
 }
