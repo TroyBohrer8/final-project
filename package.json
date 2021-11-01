@@ -21,11 +21,8 @@
     "bcrypt": "^5.0.1",
     "express": "^4.17.1",
     "mongoose": "^6.0.12",
-<<<<<<< HEAD
     "react-booking-calendar": "^1.0.3",
     "react-booking-page": "^0.1.1",
-=======
->>>>>>> 9871951547b1daa428910e24c18155e304c70ab5
     "react-calendar": "^3.5.0",
     "react-icons": "^4.3.1"
   }
