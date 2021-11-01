@@ -16,6 +16,18 @@ export const QUERY_PRODUCTS = gql`
   }
 `;
 
+export const QUERY_SERVICES = gql`
+query getService($services: [ID]!){
+ services(services: $services){
+    _id
+    name
+    description
+    price
+    image
+  }
+}
+`;
+
 export const QUERY_CHECKOUT = gql`
   query getCheckout($products: [ID]!) {
     checkout(products: $products) {
