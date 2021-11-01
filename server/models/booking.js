@@ -12,7 +12,7 @@ const bookingSchema = new Schema(
             type: Schema.Types.Date
         }
     },
-    { timestamps: true }
+    { timestamptz: true }
 );
 
 module.exports = mongoose.model('Booking', bookingSchema);

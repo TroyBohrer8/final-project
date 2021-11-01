@@ -1,7 +1,5 @@
 const { gql } = require('apollo-server-express');
 
-
-
 // type Booking {
 //   _id: ID
 //   user: ID
@@ -11,7 +9,7 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
 
-  
+
   type Category {
     _id: ID
     name: String

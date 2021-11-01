@@ -2,11 +2,12 @@ import React from "react";
 // import { Link } from 'react-router-dom';
 import '../index.css'
 
-const Bookings = () => {
+const Booked = () => {
 
   return (
     <div className="container">
-      Set up a appointment
+     Appointment Set!!!!
+
     </div>
 
   );
@@ -16,4 +17,4 @@ const Bookings = () => {
   
 
 
-export default Bookings;
+export default Booked;

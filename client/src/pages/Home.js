@@ -9,9 +9,18 @@ const Home = () => {
   return (
     <div className="container">
      
-      <Link to="/dashboard">
-    <button className="btn--home">
-          HAIR STORE
+     <Link to="/dashboard">
+    <button className="btn--home1">
+         Women
+         Women's Products
+    </button>
+    </Link>
+
+
+    <Link to="/dashboard">
+    <button className="btn--home2">
+         Men
+         Men's Products
     </button>
     </Link>
 

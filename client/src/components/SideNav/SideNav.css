@@ -1,8 +1,8 @@
 .sidenav {
-    background-color: rgb(108, 109, 112)7;
+    
     height: px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: center;
 }
 
@@ -15,15 +15,17 @@
 .nav-menu {
     background-color: rgb(108, 109, 112);
     background: url("https://wallpaperaccess.com/full/1109087.jpg");
-    background-size: cover;
-    width: 250px;
-    height: 100vh;
+    background-size:cover;
+    width: 300px;
+    height: 50vh;
     display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
     left: -100%;
     transition: 850ms;
+    
+
 }
 
 .nav-menu.active {
@@ -33,7 +35,7 @@
 
 .nav-text {
     display: flex;
-    /* justify-content: start; */
+    justify-content: start;
     align-items: center;
     padding: 8px 0 0 16px;
     list-style: none;
@@ -66,7 +68,7 @@
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: center;
 }
 

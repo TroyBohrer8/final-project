@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import Calendar from "react-calendar";
+import { Link } from "react-router-dom";
 import "./Appointment.css";
-import { useMutation } from '@apollo/client';
-import Auth from '../utils/auth';
-import { ADD_USER } from '../utils/mutations';
+import { useMutation } from "@apollo/client";
+import Auth from "../../utils/auth";
+import { ADD_USER } from "../../utils/mutations";
 
 function Appointment(props) {
-  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [formState, setFormState] = useState({ email: "", password: "" });
   const [addUser] = useMutation(ADD_USER);
+  const [date, setDate] = useState(new Date());
+
+  const onChange = date => {
+    setDate(date);
+  };
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -23,6 +29,17 @@ function Appointment(props) {
     Auth.login(token);
   };
 
+  // <Calendar showWeekNumbers onChange={onChange} value={date} />
+  // {console.log(date)}
+  // {date.toString()}
+
+  // const [booking, setBooking] = useState({
+  //   name: "",
+  //   phone: "",
+  //   email: ""
+  // });
+
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormState({
@@ -32,8 +49,10 @@ function Appointment(props) {
   };
   return (
     <div className="container my-1">
-      <h2>Book your appointment here!</h2>
-      <form>
+      <Link to="/appointment">
+        <h2>Book your appointment here!</h2>
+      </Link>
+      <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
           <label>First Name:</label>
           <input
@@ -67,16 +86,18 @@ function Appointment(props) {
         <div className="flex-row space-between my-2">
           <label>Phone:</label>
           <input
-            placeholder="(xxx)-xxx-xxxx"
-            name="phone"
-            type="phone"
-            id="phone"
+            placeholder="******"
+            name="password"
+            type="password"
+            id="pwd"
             onChange={handleChange}
           />
         </div>
-        <Calendar onChange={onChange} value={value} />
+        <Calendar onChange={onChange} value={date} />
         <div className="flex-row flex-end">
-            <button type="submit">Submit</button>
+          {/* <Link  to="/booked"> */}
+          <button type="submit">Submit</button>
+          {/* </Link> */}
         </div>
       </form>
     </div>
