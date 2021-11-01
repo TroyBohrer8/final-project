@@ -61,9 +61,11 @@ function Appointment() {
         <Calendar onChange={onChange} value={value} />
         <div>
           <br></br>
-        
-         
-            <button class="calendar-button" type="submit">Book Now!</button>
+          <Link to="/confirm">
+            <button class="calendar-button" type="submit">
+              Book Now!
+            </button>
+          </Link>
         </div>
       </form>
     </div>
