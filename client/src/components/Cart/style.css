@@ -73,3 +73,7 @@
     margin: 0 auto;
   }
 }
+
+.cart-empty{
+  size:12pt
+}
