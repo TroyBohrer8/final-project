@@ -31,12 +31,17 @@ function SideNav() {
                   <span>{item.title}</span>
                 </Link>
               </li>
+              
             );
           })}
         </ul>
+       
       </nav>
     </>
   );
 }
 
+
 export default SideNav;
+
+

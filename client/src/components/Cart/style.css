@@ -33,11 +33,11 @@
 
 .cart-closed {
   position: fixed;
-  top: 2%;
-  right: 1%;
+  top: 6%;
+  right: 9%;
   font-size: 2rem;
   cursor: pointer;
-  background-color: var(--secondary);
+  background-color: rgb(101, 208, 106);
   border-radius: 50%;
   padding: .25rem;
   width: 50px;
@@ -72,4 +72,8 @@
     position: relative;
     margin: 0 auto;
   }
+}
+
+.cart-empty{
+  size:12pt
 }
