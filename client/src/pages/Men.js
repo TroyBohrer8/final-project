@@ -1,16 +1,14 @@
 import React from "react";
 import ProductList from "../components/ProductList";
-import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
 
-const Dashboard = () => {
+const Men = () => {
   return (
     <div className="container">
-      <CategoryMenu />
       <ProductList />
       <Cart />
     </div>
   );
 };
 
-export default Dashboard;
+export default Men;
