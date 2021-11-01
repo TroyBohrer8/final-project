@@ -3,6 +3,7 @@ import Calendar from "react-calendar";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import "./appointment.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Appointment() {
   const [formState, setFormState] = useState({ email: "" });
@@ -58,14 +59,25 @@ function Appointment() {
             onChange={handleChange}
           />
         </div>
+        <div className="flex-row space-between my-2">
+          <label>Select service:</label>
+          <select id="service">
+            <option value="cut">Cut</option>
+            <option value="cut">Cut and Shave</option>
+            <option value="cut">Style with Color</option>
+            <option value="cut">Cut with Blowdry</option>
+            <option value="cut">Style with Color</option>
+          </select>
+        </div>
         <Calendar onChange={onChange} value={value} />
         <div>
           <br></br>
-          <Link to="/confirm">
-            <button class="calendar-button" type="submit">
-              Book Now!
-            </button>
-          </Link>
+        <Link to='/confirm'>
+          
+          <button class="calendar-button" type="submit">
+            Book Now!
+          </button>
+        </Link>
         </div>
       </form>
     </div>
