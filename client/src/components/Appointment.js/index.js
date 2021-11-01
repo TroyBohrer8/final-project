@@ -63,10 +63,11 @@ function Appointment() {
           <label>Select service:</label>
           <select id="service">
             <option value="cut">Cut</option>
-            <option value="cut">Cut and Shave</option>
-            <option value="cut">Style with Color</option>
-            <option value="cut">Cut with Blowdry</option>
-            <option value="cut">Style with Color</option>
+            <option value="cut-shave">Cut and Shave</option>
+            <option value="color-treatment">Color Treatment</option>
+            <option value="braids">Braids</option>
+            <option value="extention">Extention</option>
+            <option value="manicure">Manicure</option>
           </select>
         </div>
         <Calendar onChange={onChange} value={value} />
