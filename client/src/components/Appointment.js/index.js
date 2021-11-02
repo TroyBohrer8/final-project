@@ -57,14 +57,26 @@ function Appointment() {
             onChange={handleChange}
           />
         </div>
+        <div className="flex-row space-between my-2">
+          <label>Select service:</label>
+          <select id="service">
+            <option value="cut">Cut</option>
+            <option value="cut-shave">Cut and Shave</option>
+            <option value="color-treatment">Color Treatment</option>
+            <option value="braids">Braids</option>
+            <option value="extention">Extention</option>
+            <option value="manicure">Manicure</option>
+          </select>
+        </div>
         <Calendar onChange={onChange} value={value} />
         <div>
           <br></br>
-          <Link to="/confirm">
-            <button class="calendar-button" type="submit">
-              Book Now!
-            </button>
-          </Link>
+        <Link to='/confirm'>
+          
+          <button class="calendar-button" type="submit">
+            Book Now!
+          </button>
+        </Link>
         </div>
       </form>
     </div>

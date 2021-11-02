@@ -11,11 +11,15 @@ export const SideNavData = [
     className: "nav-text",
   },
   {
-      title: "Book Appointment",
-      path: "/appointment",
-      icon: <FaIcons.FaCalendar />,
-      className: "nav-text",
+    title: "Book Appointment",
+    path: "/appointment",
+    icon: <FaIcons.FaCalendar />,
+    className: "nav-text",
   },
-
-  
-]
+  {
+    title: "Order History",
+    path: "/orderHistory",
+    icon: <FaIcons.FaCalendar />,
+    className: "nav-text",
+  },
+];
