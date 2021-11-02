@@ -11,6 +11,17 @@ export const LOGIN = gql`
   }
 `;
 
+export const ADD_BOOKING = gql`
+  mutation addBooking($phone: Number!, $password: String!) {
+    login(time: $time, phone: $phone) {
+      token
+      user {
+        _id
+      }
+    }
+  }
+`;
+
 export const ADD_ORDER = gql`
   mutation addOrder($products: [ID]!) {
     addOrder(products: $products) {

@@ -4,9 +4,13 @@ const Schema = mongoose.Schema;
 
 const bookingSchema = new Schema(
     {
-        user: {
-            type: Schema.Types.ObjectId,
-            ref: 'User'
+        time: {
+            type: Number,
+            required: true,
+        },
+        phone: {
+            type: Number,
+            required: true,
         },
         date: {
             type: Schema.Types.Date

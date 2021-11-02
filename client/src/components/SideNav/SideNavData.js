@@ -1,7 +1,7 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
+
 
 export const SideNavData = [
   {
@@ -21,11 +21,5 @@ export const SideNavData = [
     path: "/orderHistory",
     icon: <FaIcons.FaCalendar />,
     className: "nav-text",
-  },
-  {
-    // title: "Logout",
-    // path: "/appointment",
-    // icon: <FaIcons.FaCalendar />,
-    // className: "nav-text",
   },
 ];
