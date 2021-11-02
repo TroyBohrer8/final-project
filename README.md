@@ -28,7 +28,7 @@ Your can view our app presenation [here.](https://docs.google.com/presentation/d
 
 ## Image:
 
-[Dashboard Screenshot](![image](https://user-images.githubusercontent.com/60293516/139875058-fc5de30b-ffe9-41aa-a428-58cab078f697.png)
+(![image](https://user-images.githubusercontent.com/60293516/139875058-fc5de30b-ffe9-41aa-a428-58cab078f697.png)
 ## Resources:
 
 - Javascript, HTML, CSS
