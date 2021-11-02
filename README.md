@@ -9,7 +9,7 @@ Welcome to Rare Hair Beauty Salon, your one-stop shop for all things hair, inclu
 
 
 ## Presentation
-Your can view our app presenation [here.](https://docs.google.com/presentation/d/1prNqVnsD-kEl74ajBZhM52OfPLuJCQMc/edit?usp=sharing&ouid=112008522330891918667&rtpof=true&sd=true)
+Your can view our app presentation [here.](https://docs.google.com/presentation/d/1prNqVnsD-kEl74ajBZhM52OfPLuJCQMc/edit?usp=sharing&ouid=112008522330891918667&rtpof=true&sd=true)
 
 #### Table of Contents
 1. [Feature List](#features)
@@ -28,7 +28,7 @@ Your can view our app presenation [here.](https://docs.google.com/presentation/d
 
 ## Image:
 
-[HOMEPAGE SCREENSHOT]
+(![image](https://user-images.githubusercontent.com/60293516/139875058-fc5de30b-ffe9-41aa-a428-58cab078f697.png)
 ## Resources:
 
 - Javascript, HTML, CSS
@@ -42,8 +42,6 @@ Your can view our app presenation [here.](https://docs.google.com/presentation/d
 ## Login:
 
 Click [here](website link) to access Rare Hair’s homepage. It should resemble the following:
-
-{INSERT SCREENSHOT}
 
 1. If you do not have an account with us, please select the “Signup” option.
 
