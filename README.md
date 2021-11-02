@@ -43,8 +43,6 @@ Your can view our app presenation [here.](https://docs.google.com/presentation/d
 
 Click [here](website link) to access Rare Hair’s homepage. It should resemble the following:
 
-{INSERT SCREENSHOT}
-
 1. If you do not have an account with us, please select the “Signup” option.
 
 2. Enter your first name, last name, preferred email address, and password, and click “Submit.”
