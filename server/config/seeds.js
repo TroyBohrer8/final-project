@@ -5,7 +5,7 @@ db.once("open", async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: "Womenn" },
+    { name: "Women" },
     { name: "Men" },
   ]);
 
@@ -93,6 +93,33 @@ db.once("open", async () => {
 
   const products = await Product.insertMany([
     {
+      name: "Eye-Liner",
+      description:
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      image: "Eyeliner.png",
+      category: categories[0]._id,
+      price: 31.98,
+      quantity: 500,
+    },
+    {
+      name: "Eye Shadow",
+      description:
+        "Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.",
+      image: "EyeShadowPalettes.png",
+      category: categories[0]._id,
+      price: 37.99,
+      quantity: 500,
+    },
+    {
+      name: "Manicure",
+      category: categories[0]._id,
+      description:
+        "Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.",
+      image: "Manicure.png",
+      price: 7.99,
+      quantity: 20,
+    },
+    {
       name: "Professional Shampoo",
       description:
         "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
@@ -104,7 +131,7 @@ db.once("open", async () => {
     {
       name: "Tea Tree Shampoo",
       description:
-        "Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.",
+        "Tea Tree Shampoo stimulates and deep cleanses the hair and scalp. Tea Tree Oil increases circulation, balances oil production, and reduces itchiness.",
       image: "TeaTreeShampoo.png",
       category: categories[1]._id,
       price: 37.99,
@@ -114,7 +141,7 @@ db.once("open", async () => {
       name: "Professional Conditioner",
       category: categories[0]._id,
       description:
-        "Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.",
+        "Advanced Full Density Conditioner helps make thin hair look and feel thicker and healthier. Formulated with biotin, zinc PCA, and Gluco-Omega Blend, this lightweight conditioner strengthens and conditions each individual strand to nourish and fortify hair to create more body and shine.",
       image: "ProfessionalConditioner.png",
       price: 7.99,
       quantity: 20,
@@ -123,7 +150,7 @@ db.once("open", async () => {
       name: "Color Extend Conditioner",
       category: categories[0]._id,
       description:
-        "Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.",
+        "The Color Extend Conditioner is formulated with Redken's Color Care complex with cranberry oil to maximize color vibrancy and ceramide to strengthens hair. Detangles and protects against color fading caused by frequent washing Provides a vibrant, shiny finish Not sure if this product is right for you?",
       image: "ColorExtendConditioner.png",
       price: 3.99,
       quantity: 50,
@@ -132,16 +159,16 @@ db.once("open", async () => {
       name: "Color Therapy Shampoo",
       category: categories[0]._id,
       description:
-        "Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.",
+        "This system offers total hair color protection with the power of silk, rooibos, bamboo, and an extract blend of gooseberry. Like all other BioSilk products you can expect silk protein to strengthen hair from the inside out.",
       image: "ColorTherapyShampoo.png",
-      price: 14.99,
+      price: 42.72,
       quantity: 100,
     },
     {
       name: "Men Scalp Treatment",
       category: categories[1]._id,
       description:
-        "Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.",
+        "A scalp treatment is like a cleansing mask for your head. The treatments come in a variety of forms, such as foams, sprays and oils, and the goal of these is to detoxify your scalp, bring in moisture, or treat issues such as eczema and psoriasis.",
       image: "MenScalpTreatment.png",
       price: 399.99,
       quantity: 30,
@@ -150,7 +177,7 @@ db.once("open", async () => {
       name: "Hold Hair Spray",
       category: categories[0]._id,
       description:
-        "In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.",
+        "Hairspray for Massive Hold and Shine For super shine and quick dry effect use TIGI Bedhead Maxxed Out Hairspray that's a non-aerosol spray made with Pump Massive Style complex. Use this hairspray to get a strong hold for any style. ",
       image: "HoldHairSpray.png",
       price: 199.99,
       quantity: 30,
@@ -159,7 +186,7 @@ db.once("open", async () => {
       name: "Leave In Conditioner",
       category: categories[0]._id,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.",
+        "Sexy Hair offers lightweight moisture & detangling to hair. Helps provide moisture without weight, leaving your hair conditioned optimally for enhanced styling results.",
       image: "LeaveInConditioner.png",
       price: 9.99,
       quantity: 100,
@@ -168,7 +195,7 @@ db.once("open", async () => {
       name: "Flexible Hold Hair Spray",
       category: categories[0]._id,
       description:
-        "Ut vulputate hendrerit nibh, a placerat elit cursus interdum.",
+        "Big Sexy Hair Spray & Stay Intense Hold Hairspray - All Nighter Hair Spray For All Hair Types provides long-lasting maximum hold & intense shine. Perfect for keep updos and elaborate styles in place.",
       image: "FlexibleHoldHairSpray.png",
       price: 1.99,
       quantity: 1000,
@@ -177,7 +204,7 @@ db.once("open", async () => {
       name: "Water Proof Mascara",
       category: categories[0]._id,
       description:
-        "Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.",
+        "Discover Tarte's bestselling Lights, Camera, Lashes 4-In-1 Mascara in a waterproof version. The same lengthening, curling, volumizing, and conditioning benefits you love in the original are in this splash proof version. ",
       image: "Mascara.png",
       price: 2.99,
       quantity: 1000,
@@ -186,7 +213,7 @@ db.once("open", async () => {
       name: "Moracan Oil",
       category: categories[1]._id,
       description:
-        "Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.",
+        "Moroccan argan oil contains vitamins, minerals, fatty acids and antioxidants that bring important benefits to the skin. ",
       image: "MoracanOil.png",
       price: 7.99,
       quantity: 100,
@@ -195,44 +222,53 @@ db.once("open", async () => {
       name: "Fragrence",
       category: categories[0]._id,
       description:
-        "Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.",
+        "Pure, crisp, clean. pure grace by philosophy represents clean, modern simplicity with its universal scent that will change the way you think about fragrance.",
       image: "Fragrence.png",
-      price: 9.99,
+      price: 44.99,
       quantity: 600,
     },
     {
-      name: "Professional Shampoo",
+      name: "Nioxin",
       description:
-        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-      image: "ProfessionalShampoo.png",
-      category: categories[0]._id,
+        "Nioxin System 2 Shampoo & Conditioner Set is specially designed for noticeably thinning, fine, natural hair. Comes with the System 2 shampoo and conditioner to help remove follicle-clogging sebum while providing thicker-looking hair by increasing the fullness of each hair strand. Reduces hair loss through strengthening and its Peppermint oil provides a refreshed scalp environment and healthy shine to your hair.",
+      image: "Nioxin.png",
+      category: categories[1]._id,
       price: 31.98,
       quantity: 500,
     },
     {
-      name: "Tea Tree Shampoo",
+      name: "Grooming Lounge Beard Master Shave Oil",
       description:
-        "Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.",
-      image: "TeaTreeShampoo.png",
+        "Grooming Lounge Beard Master Shave Oil Revolutionary shaving solution provides superior razor glide while helping to eliminate razor burn and rashes. Developed in our Barbershop, see-through oil is loaded with botanicals that help men master their beards. Can be used solo or mixed with Beard Destroyer Shave Cream.",
+      image: "GroomingLoungeBeard.png",
       category: categories[1]._id,
       price: 37.99,
       quantity: 500,
     },
     {
-      name: "Professional Conditioner",
-      category: categories[0]._id,
+      name: "Grooming Lounge Large Comb",
+      category: categories[1]._id,
       description:
-        "Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.",
-      image: "ProfessionalConditioner.png",
+        "Handmade in Switzerland for Grooming Lounge, mid-size comb is ideal for taming course or sometimes unruly hair. Can also be used to work out kinks on larger and fuller beards.",
+      image: "GroomingLoungeLongComb.png",
       price: 7.99,
       quantity: 20,
     },
     {
-      name: "Color Extend Conditioner",
-      category: categories[0]._id,
+      name: "Grooming Lounge Conditioner",
+      category: categories[1]._id,
       description:
-        "Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.",
-      image: "ColorExtendConditioner.png",
+        "Grooming Lounge You Need Conditioner is a men's daily deep hair conditioner that softens follicles, thickens hair and hydrates a dry scalp to promote healthy hair growth. Contains peppermint and other key ingredients to stimulate hair and scalps and provide that tingling pick me up some men need in the AM.",
+      image: "GroomingLoungeConditioner.png",
+      price: 3.99,
+      quantity: 50,
+    },
+    {
+      name: "Brush",
+      category: categories[1]._id,
+      description:
+        "This wooden brush is used to groom animals. Its wooden handle is lined with lots of thin, strong wemp straws. Grooming brushes are used to groom all domesticated animals. Grooming raises your animal husbandry skill, it helps diseased animals to get healthy, and it helps preventing animals from catching further disease. ",
+      image: "Brush.png",
       price: 3.99,
       quantity: 50,
     },

@@ -19,7 +19,6 @@ const bookings = [
 
 function MyBookingCalendar() {
   const [formState, setFormState] = useState({ email: "" });
-  const [value, onChange] = useState(new Date());
   
   
 
@@ -80,7 +79,7 @@ function MyBookingCalendar() {
             onChange={handleChange}
           />
         </div>
-        <BookingCalendar bookings={bookings} clickable value={onChange}  />
+        <BookingCalendar bookings={bookings} clickable   />
         <div>
           <br></br>
           <Link to="/confirm">
