@@ -41,7 +41,7 @@ Your can view our app presentation [here.](https://docs.google.com/presentation/
 
 ## Login:
 
-Click [here](website link) to access Rare Hair’s homepage. It should resemble the following:
+Click [here](https://frozen-thicket-85175.herokuapp.com/signup) to access Rare Hair’s homepage. It should resemble the following:
 
 1. If you do not have an account with us, please select the “Signup” option.
 
