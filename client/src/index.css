@@ -146,42 +146,22 @@ button {
 
 .btn--home1 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
  font-weight: bolder;
 vertical-align: bottom; 
-padding-top: 275px;
+padding-top: 0px;
   border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 20px 1px;
-  margin-left: 280px;
+margin-left: 485px;
   background-color: rgb(108, 109, 112);
-  background-image: url(./pages/HairSilhouette.png);
+  background-image: url(./pages/combo.png);
   background-size: cover;
-  height: 300px;
-  width:250px;
+  height: 430px;
+  width:220px;
  
-}
-
-.btn--home2 {
-  color: white;
-  font-size: 1rem;
- font-weight: bolder;
- vertical-align: bottom; 
- padding-top: 275px;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 20px 1px;
-  margin-left: 100px;
-  background-color: rgb(108, 109, 112);
-  background-image: url(./pages/manhairsilouette.png);
-  background-size: cover;
-  height: 300px;
-  width:250px;
-
 }
 
 
@@ -298,7 +278,9 @@ input:focus {
   }
 }
 
-
+.nav-title {
+  color:#f52525;
+}
 
 
 .main-title {
@@ -306,3 +288,110 @@ input:focus {
   color: #458859;
 }
 
+@media screen and (max-width: 1150px) {
+  .card {
+    width: 75%;
+  }
+    h1 {
+      font-size: 2rem;
+    }
+    .header{
+    width: 75%
+  }
+  .btn--home1 {
+  margin-left: 400px;
+
+}
+}
+@media screen and (max-width: 1050px) {
+  .card {
+    width: 75%;
+  }
+    h1 {
+      font-size: 1.75rem;
+    }
+    .header{
+    width: 75%
+  }
+  .btn--home1 {
+    margin-left: 375px;
+  
+  }
+  
+}
+
+@media screen and (max-width: 950px) {
+  .card {
+    width: 75%;
+  }
+    h1 {
+      font-size: 1.5rem;
+    }
+    .header{
+    width: 75%;
+  }
+  .btn--home1 {
+    margin-left: 350px;
+  
+  }
+  
+  
+}
+
+
+@media screen and (max-width: 850px) {
+  .card {
+    width: 75%;
+  }
+    h1 {
+      font-size: 1rem;
+    }
+    .header{
+    width: 75%;
+  }
+  .btn--home1 {
+    margin-left: 300px;
+  
+  }
+  
+  
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 75%;
+  }
+    h1 {
+      font-size: 1rem;
+    }
+    .header{
+    width: 75%;
+  }
+  .btn--home1 {
+    margin-left: 250px;
+  
+  }
+  
+  li {
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card {
+    width: 75%;
+  }
+    h1 {
+      font-size: 1rem;
+    }
+    .header{
+    width: 75%;
+  }
+  .btn--home1 {
+    margin-left: 225px;
+  
+  }
+  
+  li {
+    font-size: 10pt;
+  }
+}
