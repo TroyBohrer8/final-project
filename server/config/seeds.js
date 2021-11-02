@@ -5,8 +5,8 @@ db.once("open", async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
+    { name: "Womenn" },
     { name: "Men" },
-    { name: "Women" },
   ]);
 
   console.log("categories seeded");
@@ -75,7 +75,7 @@ db.once("open", async () => {
       name: "Shaving",
       description: "Prices vary",
       image: "20.00",
-      category: categories[0]._id,
+      category: categories[1]._id,
       price: "20.00",
     },
     {
@@ -199,6 +199,42 @@ db.once("open", async () => {
       image: "Fragrence.png",
       price: 9.99,
       quantity: 600,
+    },
+    {
+      name: "Professional Shampoo",
+      description:
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      image: "ProfessionalShampoo.png",
+      category: categories[0]._id,
+      price: 31.98,
+      quantity: 500,
+    },
+    {
+      name: "Tea Tree Shampoo",
+      description:
+        "Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.",
+      image: "TeaTreeShampoo.png",
+      category: categories[1]._id,
+      price: 37.99,
+      quantity: 500,
+    },
+    {
+      name: "Professional Conditioner",
+      category: categories[0]._id,
+      description:
+        "Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.",
+      image: "ProfessionalConditioner.png",
+      price: 7.99,
+      quantity: 20,
+    },
+    {
+      name: "Color Extend Conditioner",
+      category: categories[0]._id,
+      description:
+        "Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.",
+      image: "ColorExtendConditioner.png",
+      price: 3.99,
+      quantity: 50,
     },
   ]);
 

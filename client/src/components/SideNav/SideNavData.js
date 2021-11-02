@@ -11,18 +11,6 @@ export const SideNavData = [
     className: "nav-text",
   },
   {
-    title: "Men",
-    path: "#",
-    icon: <FaIcons.FaMars/>,
-    className: "nav-text",
-  },
-  {
-    title: "Women",
-    path: "#",
-    icon: <FaIcons.FaVenus />,
-    className: "nav-text",
-  },
-  {
       title: "Book Appointment",
       path: "/appointment",
       icon: <FaIcons.FaCalendar />,

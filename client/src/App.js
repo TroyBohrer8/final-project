@@ -22,6 +22,7 @@ import OrderHistory from './pages/OrderHistory';
 // import Appointment from './components/Appointment.js';
 import MyBookingCalendar from './components/MyBookingCalendar';
 import Confirm from './pages/Confirm';
+import ServiceList from './components/ServiceList';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -59,6 +60,7 @@ function App() {
               <Route exact path="/products/:id" component={Detail} />
               <Route exact path="/appointment" component={MyBookingCalendar} />
               <Route exact path="/confirm" component={Confirm} />
+              <Route exact path="/service" component={ServiceList} />
               <Route component={NoMatch} />
             </Switch>
           </StoreProvider>
