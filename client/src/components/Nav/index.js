@@ -44,7 +44,9 @@ function Nav() {
       <h1>
         <Link to="/">
           <span role="img" aria-label="Beauty Solon"></span>
+     
           Rare Hair Beauty Salon
+        
         </Link>
       </h1>
       <div className="menu-icon" onClick={handleClick}></div>

@@ -3,7 +3,6 @@ import Calendar from "react-calendar";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import "./appointment.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Appointment() {
   const [formState, setFormState] = useState({ email: "" });
